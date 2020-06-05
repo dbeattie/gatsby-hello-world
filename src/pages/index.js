@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
+    <Layout>
       <Link to="/contact/">Contact</Link>
       {/* <Header headerText="Hello Gatsby!" /> */}
       <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
@@ -13,6 +14,6 @@ export default function Home() {
         websites.
       </p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    </Layout>
   )
 }
